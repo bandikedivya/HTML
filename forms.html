@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student Registration Form></title>
+    </head>
+        <style>
+            body {
+                background-color: #e9f0f2;
+                display:flex;
+                justify-content:center;
+                padding: 50px;
+            }
+            .form-container{
+                background-color: #2f4f4f;
+                color:white;
+                padding: 20px; 
+                width: 350px;
+                border-radius: 10px;
+            }
+            .form-container h1{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .form-container input[type="text"],.form-container input[type="email"],.form-container input[type="password"],.form-container input[type="date"],.form-container textarea, .form-container select{
+                width:100%;
+                padding: 10px;
+                margin:8px 0;
+                border:none;
+                border-radius: 5px;
+            }
+            .form-container label{
+                display: block;
+                margin-top:10px;
+            }
+            .form-container input[type="radio"],.form-container input[type="checkbox"]{
+                margin-right:5px;
+
+            }
+            .form-container textarea {
+                resize:none;
+                height:60px;
+            }
+            .form-container button{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                width:25%;
+                border:none;
+                border-radius: 5px;
+                margin-top:15px;
+                font-size:16px;
+            }
+            .form-container .login-text span{
+                color: lightgreen;
+                font-weight: bold;
+            }
+        </style>
+        <body>
+            <form>
+                <div class="form-container">
+                <h1>Student Registration Form</h1>
+                <div>
+                <label for="username">Name</label>
+                <div>
+                <input id="username" name="username" type="text" />
+                </div>
+                    </div>
+                    <div>
+                <label for="useremail">Email</label>
+                <div>
+                <input id="useremail" name="useremail" type="email" />
+                </div>
+                        </div>
+                <div>
+                    <label for="userpassword">Password</label>
+                    <div>
+                    <input id="userpassword" name="userpassword" type="password" />
+                </div>
+                </div>
+                <div>
+                    <label >Date of Birth</label>
+                    <div>
+                    <input id="dob" name="dob" type="date" />
+                </div>
+                </div>
+                <div>
+                    <label >Gender</label>
+                    <input id="male" name="gender" type="radio" /> Male
+                    <input id="Female" name="gender" type="radio" /> Female
+                    <input id="prefer not to say" name="gender" type="radio" />Prefer not to say
+                </div>
+                <div>
+                    <label >Hobbies</label>
+                    <input id="hobby1" name="hobby" type="checkbox" /> Sports
+                    <input id="hobby2" name="hobby" type="checkbox" /> Music
+                    <input id="hobby3" name="hobby" type="checkbox" /> Cooking
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <div>
+                        <select id="country" name="usercountry">
+                        <option>India</option>
+                        <option>US</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                       </select>
+                </div>
+                </div>
+                <div>
+                    <label for="comments">Comments</label>
+                    <div>
+                    <textarea rows="3" id="comments" name="usercomments"></textarea>
+                </div>
+                </div>
+                <div>
+                    <button id="submit">Submit</button>
+                    <span> Already Having Account? Please sign in with <strong>Google</strong></span>
+                </div>
+                </div>
+            </form>
+        </body>
+    
+</html>
